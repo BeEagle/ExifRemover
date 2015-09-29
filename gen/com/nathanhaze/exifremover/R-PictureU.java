@@ -63,14 +63,7 @@ containing a value of this type.
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>google_wallet_classic</code></td><td>1</td><td></td></tr>
-<tr><td><code>google_wallet_grayscale</code></td><td>2</td><td></td></tr>
-<tr><td><code>google_wallet_monochrome</code></td><td>3</td><td></td></tr>
-<tr><td><code>classic</code></td><td>1</td><td> TODO(waltercacau): Uncomment when Android Pay is launched to all developers:
-                <enum name="android_pay_dark" value="4"/>
-                <enum name="android_pay_light" value="5"/>
-                <enum name="android_pay_light_with_border" value="6"/> 
- Deprecated values </td></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
 <tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
@@ -105,10 +98,7 @@ containing a value of this type.
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>buy_with</code></td><td>5</td><td></td></tr>
-<tr><td><code>logo_only</code></td><td>6</td><td></td></tr>
-<tr><td><code>donate_with</code></td><td>7</td><td></td></tr>
-<tr><td><code>buy_with_google</code></td><td>1</td><td> Deprecated values </td></tr>
+<tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
 <tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
 <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
 <tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
@@ -299,11 +289,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>google_wallet_classic</code></td><td>1</td><td></td></tr>
-<tr><td><code>google_wallet_monochrome</code></td><td>2</td><td></td></tr>
-<tr><td><code>classic</code></td><td>1</td><td> TODO(waltercacau): Uncomment when Android Pay is launched to all developers:
-                <enum name="android_pay" value="3"/> 
- Deprecated values </td></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
          */
@@ -496,44 +482,38 @@ containing a value of this type.
         public static final int powered_by_google_light=0x7f020025;
     }
     public static final class id {
-        public static final int adView=0x7f070026;
-        public static final int add_image=0x7f070021;
+        public static final int adView=0x7f070020;
+        public static final int add_image=0x7f07001b;
         public static final int adjust_height=0x7f070001;
         public static final int adjust_width=0x7f070002;
         public static final int book_now=0x7f070012;
         public static final int buyButton=0x7f07000e;
         public static final int buy_now=0x7f070013;
-        public static final int buy_with=0x7f070014;
-        public static final int buy_with_google=0x7f070015;
+        public static final int buy_with_google=0x7f070014;
         public static final int cast_notification_id=0x7f070000;
-        public static final int classic=0x7f070019;
-        public static final int delete_photo=0x7f070023;
-        public static final int different_photo=0x7f070024;
-        public static final int donate_with=0x7f070016;
-        public static final int donate_with_google=0x7f070017;
-        public static final int google_wallet_classic=0x7f07001a;
-        public static final int google_wallet_grayscale=0x7f07001b;
-        public static final int google_wallet_monochrome=0x7f07001c;
-        public static final int grayscale=0x7f07001d;
+        public static final int classic=0x7f070016;
+        public static final int delete_photo=0x7f07001d;
+        public static final int different_photo=0x7f07001e;
+        public static final int donate_with_google=0x7f070015;
+        public static final int grayscale=0x7f070017;
         public static final int holo_dark=0x7f070008;
         public static final int holo_light=0x7f070009;
         public static final int hybrid=0x7f070004;
-        public static final int logo_only=0x7f070018;
         public static final int match_parent=0x7f070010;
-        public static final int monochrome=0x7f07001e;
+        public static final int monochrome=0x7f070018;
         public static final int none=0x7f070003;
         public static final int normal=0x7f070005;
         public static final int production=0x7f07000a;
-        public static final int remove=0x7f070025;
+        public static final int remove=0x7f07001f;
         public static final int sandbox=0x7f07000b;
         public static final int satellite=0x7f070006;
-        public static final int scrollView1=0x7f070020;
+        public static final int scrollView1=0x7f07001a;
         public static final int selectionDetails=0x7f07000f;
-        public static final int slide=0x7f07001f;
+        public static final int slide=0x7f070019;
         public static final int strict_sandbox=0x7f07000c;
         public static final int terrain=0x7f070007;
         public static final int test=0x7f07000d;
-        public static final int user_image=0x7f070022;
+        public static final int user_image=0x7f07001c;
         public static final int wrap_content=0x7f070011;
     }
     public static final class integer {
@@ -688,8 +668,6 @@ containing a value of this type.
         public static final int store_picture_title=0x7f060000;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
- Text on a button that allows a user to make a payment with Google Wallet
-         [CHAR LIMIT=30] 
          */
         public static final int wallet_buy_button_place_holder=0x7f06002b;
     }
@@ -1333,14 +1311,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>google_wallet_classic</code></td><td>1</td><td></td></tr>
-<tr><td><code>google_wallet_grayscale</code></td><td>2</td><td></td></tr>
-<tr><td><code>google_wallet_monochrome</code></td><td>3</td><td></td></tr>
-<tr><td><code>classic</code></td><td>1</td><td> TODO(waltercacau): Uncomment when Android Pay is launched to all developers:
-                <enum name="android_pay_dark" value="4"/>
-                <enum name="android_pay_light" value="5"/>
-                <enum name="android_pay_light_with_border" value="6"/> 
- Deprecated values </td></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
 <tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
@@ -1389,10 +1360,7 @@ containing a value of this type.
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>buy_with</code></td><td>5</td><td></td></tr>
-<tr><td><code>logo_only</code></td><td>6</td><td></td></tr>
-<tr><td><code>donate_with</code></td><td>7</td><td></td></tr>
-<tr><td><code>buy_with_google</code></td><td>1</td><td> Deprecated values </td></tr>
+<tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
 <tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
 <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
 <tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
@@ -1494,11 +1462,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>google_wallet_classic</code></td><td>1</td><td></td></tr>
-<tr><td><code>google_wallet_monochrome</code></td><td>2</td><td></td></tr>
-<tr><td><code>classic</code></td><td>1</td><td> TODO(waltercacau): Uncomment when Android Pay is launched to all developers:
-                <enum name="android_pay" value="3"/> 
- Deprecated values </td></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
